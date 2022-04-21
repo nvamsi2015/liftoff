@@ -40,6 +40,24 @@ for p in permutations(nums_list,l):
 
 print(max(permutations_list))
     
+#------- 4th problem -------------
+
+n= int(input())
+
+result_list = []
+
+for i in range(1,n+1):
+    if i % 15 ==0:
+        result_list.append("FizzBuzz")
+    elif i%3 ==0:
+        result_list.append("Fizz")
+    elif i%5 ==0:
+        result_list.append("Buzz")
+    else:
+        result_list.append(i)
+
+print(result_list)
+
 
 
 
